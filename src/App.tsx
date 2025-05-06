@@ -9,7 +9,7 @@ function App() {
   const [date, setDate] = useState<datetime>();
 
   async function getDate() {
-    const res = await fetch("http://localhost:8000/", {
+    const res = await fetch("https://atividade8-back-end.onrender", {
       method: "GET",
     });
     setDate(await res.json());
